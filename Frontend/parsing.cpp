@@ -89,7 +89,7 @@ void fill_tree (bin_tree *tree, FILE *program, variables *var, elements *elem)
 
             elem->elements_[elem->curr_size_++] = create_tree_element(NUM, value, nullptr, nullptr);
         }
-        else if (strncmp(text.counter, "õóé íà âîğîòíè÷îê", 17) == 0)
+        else if (strncmp(text.counter, "Ñ…ÑƒĞ¹ Ğ½Ğ° Ğ²Ğ¾Ñ€Ğ¾Ñ‚Ğ½Ğ¸Ñ‡Ğ¾Ğº", 17) == 0)
         {
             text.counter += 17;
             elem->elements_[elem->curr_size_++] = create_tree_element(RETURN, 0, nullptr, nullptr);
@@ -279,87 +279,87 @@ int is_keyword (char *temp_var_name, int *type)
 {
     *type = NUM;
 
-    if (strcmp(temp_var_name, "íîëü") == 0)
+    if (strcmp(temp_var_name, "Ğ½Ğ¾Ğ»ÑŒ") == 0)
         return 0;
 
     *type = BRACKET;
 
-    if (strcmp(temp_var_name, "_ÑËÀÂÀ_") == 0)
+    if (strcmp(temp_var_name, "_Ğ¡Ğ›ĞĞ’Ğ_") == 0)
         return OPEN;
 
-    if (strcmp(temp_var_name, "_ĞÓÑÀÌ_") == 0)
+    if (strcmp(temp_var_name, "_Ğ Ğ£Ğ¡ĞĞœ_") == 0)
         return CLOSE;
 
     *type = FIG_BRACKET;
 
-    if (strcmp(temp_var_name, "ØÓÅ") == 0)
+    if (strcmp(temp_var_name, "Ğ¨Ğ£Ğ•") == 0)
         return OPEN;
 
-    if (strcmp(temp_var_name, "ÏÏØ") == 0)
+    if (strcmp(temp_var_name, "ĞŸĞŸĞ¨") == 0)
         return CLOSE;
 
     *type = FUNC;
 
-    if (strcmp(temp_var_name, "ñûí") == 0)
+    if (strcmp(temp_var_name, "ÑÑ‹Ğ½") == 0)
         return SIN;
-    if (strcmp(temp_var_name, "êîñòü") == 0)
+    if (strcmp(temp_var_name, "ĞºĞ¾ÑÑ‚ÑŒ") == 0)
         return COS;
-    else if (strcmp(temp_var_name, "òûê") == 0)
+    else if (strcmp(temp_var_name, "Ñ‚Ñ‹Ğº") == 0)
         return TG;
-    else if (strcmp(temp_var_name, "êîòûê") == 0)
+    else if (strcmp(temp_var_name, "ĞºĞ¾Ñ‚Ñ‹Ğº") == 0)
         return CTG;
-    else if (strcmp(temp_var_name, "îğêñûí") == 0)
+    else if (strcmp(temp_var_name, "Ğ¾Ñ€ĞºÑÑ‹Ğ½") == 0)
         return ARCSIN;
-    else if (strcmp(temp_var_name, "îğãêîñòü") == 0)
+    else if (strcmp(temp_var_name, "Ğ¾Ñ€Ğ³ĞºĞ¾ÑÑ‚ÑŒ") == 0)
         return ARCCOS;
-    else if (strcmp(temp_var_name, "îğêòûê") == 0)
+    else if (strcmp(temp_var_name, "Ğ¾Ñ€ĞºÑ‚Ñ‹Ğº") == 0)
         return ARCTG;
-    else if (strcmp(temp_var_name, "îğêîòûê") == 0)
+    else if (strcmp(temp_var_name, "Ğ¾Ñ€ĞºĞ¾Ñ‚Ñ‹Ğº") == 0)
         return ARCCTG;
-    else if (strcmp(temp_var_name, "øèçóñ") == 0)
+    else if (strcmp(temp_var_name, "ÑˆĞ¸Ğ·ÑƒÑ") == 0)
         return SH;
-    else if (strcmp(temp_var_name, "äæèçóñ") == 0)
+    else if (strcmp(temp_var_name, "Ğ´Ğ¶Ğ¸Ğ·ÑƒÑ") == 0)
         return CH;
-    else if (strcmp(temp_var_name, "òàõõõ") == 0)
+    else if (strcmp(temp_var_name, "Ñ‚Ğ°Ñ…Ñ…Ñ…") == 0)
         return TH;
-    else if (strcmp(temp_var_name, "êîòàõõõ") == 0)
+    else if (strcmp(temp_var_name, "ĞºĞ¾Ñ‚Ğ°Ñ…Ñ…Ñ…") == 0)
         return CTH;
-    else if (strcmp(temp_var_name, "ëóíà") == 0)
+    else if (strcmp(temp_var_name, "Ğ»ÑƒĞ½Ğ°") == 0)
         return LN;
-    else if (strcmp(temp_var_name, "îïóñòèòü") == 0)
+    else if (strcmp(temp_var_name, "Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ñ‚ÑŒ") == 0)
         return DERIV;
-    else if (strcmp(temp_var_name, "÷åêóøêà") == 0)
+    else if (strcmp(temp_var_name, "Ñ‡ĞµĞºÑƒÑˆĞºĞ°") == 0)
         return SCAN;
-    else if (strcmp(temp_var_name, "ìóäà÷îê") == 0)
+    else if (strcmp(temp_var_name, "Ğ¼ÑƒĞ´Ğ°Ñ‡Ğ¾Ğº") == 0)
         return PRINT;
 
     *type = OPER;
 
-    if (strcmp(temp_var_name, "ğûáà") == 0)
+    if (strcmp(temp_var_name, "Ñ€Ñ‹Ğ±Ğ°") == 0)
         return POW;
 
     *type = MAIN;
 
-    if (strcmp(temp_var_name, "æó÷îê") == 0)
+    if (strcmp(temp_var_name, "Ğ¶ÑƒÑ‡Ğ¾Ğº") == 0)
         return MAIN;
 
     *type = COMMAND;
 
-    if (strcmp(temp_var_name, "çàñåğóøêà") == 0)
+    if (strcmp(temp_var_name, "Ğ·Ğ°ÑĞµÑ€ÑƒÑˆĞºĞ°") == 0)
         return IF;
 
-    if (strcmp(temp_var_name, "ïîğíóøêà") == 0)
+    if (strcmp(temp_var_name, "Ğ¿Ğ¾Ñ€Ğ½ÑƒÑˆĞºĞ°") == 0)
         return WHILE;
 
-    if (strcmp(temp_var_name, "ïîëó÷àåò") == 0)
+    if (strcmp(temp_var_name, "Ğ¿Ğ¾Ğ»ÑƒÑ‡Ğ°ĞµÑ‚") == 0)
         return ASSIGN;
 
     *type = CONDITION;
 
-    if (strcmp(temp_var_name, "íå") == 0)
+    if (strcmp(temp_var_name, "Ğ½Ğµ") == 0)
         return JNE;
 
-    if (strcmp(temp_var_name, "ğàâíî") == 0)
+    if (strcmp(temp_var_name, "Ñ€Ğ°Ğ²Ğ½Ğ¾") == 0)
         return JE;
 
     return -1;
@@ -884,8 +884,8 @@ void syntax_error (text_t *text, elements *elem, int line, const char *file)
 
 int isletter (int character)
 {
-    return isalpha (character) || (character >= 'à' && character <= 'ÿ') || (character >= 'À' && character <= 'ß')
-        || character == '¸' || character == '¨';
+    return isalpha (character) || (character >= 'Ğ°' && character <= 'Ñ') || (character >= 'Ğ' && character <= 'Ğ¯')
+        || character == 'Ñ‘' || character == 'Ğ';
 }
 
 void deriv_all_expr (bin_tree_elem *element)
