@@ -1,0 +1,42 @@
+The number in the pick of stack is 0
+
+The number in the pick of stack is 1
+
+The number in the pick of stack is 1
+
+The number in the pick of stack is 2
+
+The number in the pick of stack is 3
+
+The number in the pick of stack is 5
+
+The number in the pick of stack is 8
+
+The number in the pick of stack is 13
+
+The number in the pick of stack is 21
+
+The number in the pick of stack is 34
+
+The number in the pick of stack is 55
+
+The number in the pick of stack is 1
+
+The number in the pick of stack is 2
+
+The number in the pick of stack is 6
+
+The number in the pick of stack is 24
+
+The number in the pick of stack is 120
+
+The number in the pick of stack is 720
+
+The number in the pick of stack is 5040
+
+The number in the pick of stack is 40320
+
+The number in the pick of stack is 362880
+
+The number in the pick of stack is 3.6288e+06
+
